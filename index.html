@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Tile 2048 — seven variants of the 2048 puzzle</title>
+  <meta name="description" content="Seven themed versions of the 2048 sliding-tile puzzle: army ranks, cupcakes, Pantone colours, Star Wars, World Cup shirts, Tiffany jewellery and shoes. Each one plays in English and Spanish.">
+  <link rel="canonical" href="https://tile2048.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Tile 2048 — seven variants of the 2048 puzzle">
+  <meta property="og:description" content="Army ranks, cupcakes, Pantone colours, Star Wars, World Cup shirts, Tiffany jewellery and shoes. Each variant plays in English and Spanish.">
+  <meta property="og:url" content="https://tile2048.github.io/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <style>
+    :root {
+      --ink: #2f2b26;
+      --muted: #6d655c;
+      --line: #e2ddd4;
+      --paper: #fbf9f5;
+      --card: #ffffff;
+      --accent: #8a6d3b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 56px 20px 72px;
+      background: var(--paper);
+      color: var(--ink);
+      font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 860px; margin: 0 auto; }
+    header { margin-bottom: 40px; }
+    h1 {
+      margin: 0 0 10px;
+      font-size: 34px;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+    }
+    .lede { margin: 0; color: var(--muted); max-width: 46em; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 14px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .card {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      height: 100%;
+      padding: 16px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+    }
+    .card img {
+      flex: none;
+      width: 44px;
+      height: 44px;
+      border-radius: 9px;
+      border: 1px solid var(--line);
+    }
+    .card h2 { margin: 0 0 3px; font-size: 16px; line-height: 1.3; }
+    .card p { margin: 0 0 8px; font-size: 13.5px; color: var(--muted); }
+    .card a { color: var(--accent); text-decoration: none; }
+    .card a:hover, .card a:focus { text-decoration: underline; }
+    .langs { font-size: 13.5px; }
+    .langs span { color: var(--line); padding: 0 4px; }
+    footer {
+      margin-top: 44px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+      font-size: 13px;
+      color: var(--muted);
+    }
+    @media (max-width: 480px) {
+      body { padding: 36px 16px 56px; }
+      h1 { font-size: 26px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Tile 2048</h1>
+      <p class="lede">Seven themed versions of the 2048 sliding-tile puzzle. Same 4×4 board and same rules, a different set of tiles on every one. Each variant has an English page and a Spanish page.</p>
+    </header>
+
+    <ul class="grid">
+      <li class="card">
+        <img src="https://tile2048.github.io/2048-ARMY/meta/apple-touch-icon.png" alt="" width="44" height="44">
+        <div>
+          <h2>2048 Army</h2>
+          <p>Badges of rank, from private to general.</p>
+          <p class="langs"><a href="https://tile2048.github.io/2048-ARMY/">English</a><span>·</span><a href="https://tile2048.github.io/2048-ARMY/es/" hreflang="es" lang="es">Español</a></p>
+        </div>
+      </li>
+      <li class="card">
+        <img src="https://tile2048.github.io/2048-CUPCAKES/meta/apple-touch-icon.png" alt="" width="44" height="44">
+        <div>
+          <h2>2048 Cupcakes</h2>
+          <p>Thirteen bakes, up to the rainbow swirl.</p>
+          <p class="langs"><a href="https://tile2048.github.io/2048-CUPCAKES/">English</a><span>·</span><a href="https://tile2048.github.io/2048-CUPCAKES/es/" hreflang="es" lang="es">Español</a></p>
+        </div>
+      </li>
+      <li class="card">
+        <img src="https://tile2048.github.io/2048-MUNDIAL/meta/apple-touch-icon.png" alt="" width="44" height="44">
+        <div>
+          <h2>2048 Mundial</h2>
+          <p>World Cup shirts, from Cameroon to Italy.</p>
+          <p class="langs"><a href="https://tile2048.github.io/2048-MUNDIAL/">English</a><span>·</span><a href="https://tile2048.github.io/2048-MUNDIAL/es/" hreflang="es" lang="es">Español</a></p>
+        </div>
+      </li>
+      <li class="card">
+        <img src="https://tile2048.github.io/2048-PANTONE/meta/apple-touch-icon.png" alt="" width="44" height="44">
+        <div>
+          <h2>2048 PANTONE</h2>
+          <p>A colour chart you can shuffle.</p>
+          <p class="langs"><a href="https://tile2048.github.io/2048-PANTONE/">English</a><span>·</span><a href="https://tile2048.github.io/2048-PANTONE/es/" hreflang="es" lang="es">Español</a></p>
+        </div>
+      </li>
+      <li class="card">
+        <img src="https://tile2048.github.io/2048-STARWARS/meta/apple-touch-icon.png" alt="" width="44" height="44">
+        <div>
+          <h2>2048 Star Wars</h2>
+          <p>Stormtroopers, droids and the Death Star.</p>
+          <p class="langs"><a href="https://tile2048.github.io/2048-STARWARS/">English</a><span>·</span><a href="https://tile2048.github.io/2048-STARWARS/es/" hreflang="es" lang="es">Español</a></p>
+        </div>
+      </li>
+      <li class="card">
+        <img src="https://tile2048.github.io/2048-SUPERHEELS/meta/apple-touch-icon.png" alt="" width="44" height="44">
+        <div>
+          <h2>2048 SuperHeels</h2>
+          <p>A shoe shelf, from ballet flat to platform mule.</p>
+          <p class="langs"><a href="https://tile2048.github.io/2048-SUPERHEELS/">English</a><span>·</span><a href="https://tile2048.github.io/2048-SUPERHEELS/es/" hreflang="es" lang="es">Español</a></p>
+        </div>
+      </li>
+      <li class="card">
+        <img src="https://tile2048.github.io/2048-TIFFANY/meta/apple-touch-icon.png" alt="" width="44" height="44">
+        <div>
+          <h2>2048 Tiffany</h2>
+          <p>A jewellery case with the price on every piece.</p>
+          <p class="langs"><a href="https://tile2048.github.io/2048-TIFFANY/">English</a><span>·</span><a href="https://tile2048.github.io/2048-TIFFANY/es/" hreflang="es" lang="es">Español</a></p>
+        </div>
+      </li>
+    </ul>
+
+    <footer>
+      <p>Fan-made variants of 2048, the original game by Gabriele Cirulli. Released under the MIT licence.</p>
+    </footer>
+  </div>
+</body>
+</html>

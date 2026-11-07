@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tile2048.github.io/2048-CUPCAKES/sitemap.xml
+Sitemap: https://tile2048.github.io/2048-STARWARS/sitemap.xml
+Sitemap: https://tile2048.github.io/2048-PANTONE/sitemap.xml
+Sitemap: https://tile2048.github.io/2048-ARMY/sitemap.xml
+Sitemap: https://tile2048.github.io/2048-MUNDIAL/sitemap.xml
+Sitemap: https://tile2048.github.io/2048-TIFFANY/sitemap.xml
+Sitemap: https://tile2048.github.io/2048-SUPERHEELS/sitemap.xml
+
+Sitemap: https://tile2048.github.io/sitemap.xml
